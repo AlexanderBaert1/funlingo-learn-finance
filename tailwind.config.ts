@@ -64,9 +64,11 @@ export default {
 					ring: 'hsl(var(--sidebar-ring))'
 				},
 				finlingo: {
-					primary: '#2CB674',
-					secondary: '#4ECDC4',
-					purple: '#9B87F5',
+					primary: '#3D99EC',        // Blue from logo
+					secondary: '#4CA35A',      // Green from logo
+					'primary-light': '#61AFFF', // Lighter blue for hover states
+					'secondary-light': '#65BD74', // Lighter green for hover states
+					purple: '#9B87F5',         // Keeping purple as accent
 					'purple-dark': '#6E59A5',
 					orange: '#F97316',
 				},

@@ -19,12 +19,12 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
         {/* Logo and Progress Section */}
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center">
-            <span className="text-finlingo-primary text-2xl font-bold">Fin<span className="text-finlingo-purple">lingo</span></span>
+            <span className="text-[#3D99EC] text-2xl font-bold">Fin<span className="text-[#4CA35A]">lingo</span></span>
           </Link>
           
           {/* Daily Progress */}
           <div className="hidden sm:flex items-center gap-2">
-            <Progress value={progress} className="w-32 h-2.5 bg-gray-200" indicatorClassName="bg-finlingo-primary" />
+            <Progress value={progress} className="w-32 h-2.5 bg-gray-200" />
             <span className="text-sm font-medium">{progress}%</span>
           </div>
         </div>
@@ -33,8 +33,8 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
         <div className="flex items-center gap-6">
           {/* Streak */}
           <div className="flex items-center">
-            <div className="bg-finlingo-orange/10 p-2 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="bg-[#3D99EC]/10 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D99EC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14.5 4.5 12 2 9.5 4.5"></path>
                 <path d="m18 6-2-2"></path>
                 <path d="m8 6-2 2"></path>
@@ -49,8 +49,8 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
           
           {/* Gems */}
           <div className="flex items-center">
-            <div className="bg-finlingo-purple/10 p-2 rounded-full">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9B87F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="bg-[#4CA35A]/10 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CA35A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 3h12l4 6-10 13L2 9Z"></path>
                 <path d="M12 22V9"></path>
                 <path d="m12 9 4-6"></path>

@@ -19,7 +19,7 @@ const Index = () => {
       <main className="container mx-auto px-4 py-6">
         {/* Hero Section */}
         <section className="mb-10">
-          <Card className="overflow-hidden bg-gradient-to-r from-finlingo-primary/90 to-finlingo-purple/80">
+          <Card className="overflow-hidden bg-gradient-to-r from-finlingo-primary to-finlingo-secondary">
             <CardContent className="p-6 sm:p-8">
               <div className="flex flex-col md:flex-row items-center">
                 <div className="md:w-2/3 text-white mb-6 md:mb-0">
@@ -64,8 +64,8 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-6 sm:items-center">
                 <div className="sm:w-1/3">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 rounded-full bg-finlingo-orange/10 flex items-center justify-center mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#F97316" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <div className="w-8 h-8 rounded-full bg-finlingo-primary/10 flex items-center justify-center mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D99EC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M14.5 4.5 12 2 9.5 4.5"></path>
                         <path d="m18 6-2-2"></path>
                         <path d="m8 6-2 2"></path>
@@ -82,8 +82,8 @@ const Index = () => {
                 
                 <div className="sm:w-1/3">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 rounded-full bg-finlingo-purple/10 flex items-center justify-center mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#9B87F5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <div className="w-8 h-8 rounded-full bg-finlingo-secondary/10 flex items-center justify-center mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CA35A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="M6 3h12l4 6-10 13L2 9Z"></path>
                         <path d="M12 22V9"></path>
                         <path d="m12 9 4-6"></path>
@@ -97,8 +97,8 @@ const Index = () => {
                 
                 <div className="sm:w-1/3">
                   <div className="flex items-center mb-2">
-                    <div className="w-8 h-8 rounded-full bg-finlingo-primary/10 flex items-center justify-center mr-2">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#2CB674" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <div className="w-8 h-8 rounded-full bg-finlingo-secondary/10 flex items-center justify-center mr-2">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CA35A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                         <path d="m22 10-10.1 5.7a3 3 0 0 1-3 0L2 12"></path>
                         <path d="M6 12v6a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2v-6"></path>
                         <path d="M2 8.5 12 14l10-5.5"></path>
