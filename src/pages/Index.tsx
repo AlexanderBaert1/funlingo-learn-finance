@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -33,7 +34,7 @@ const Index = () => {
                       </Button>
                     </Link>
                     <Link to="#topics">
-                      <Button size="lg" className="bg-white/20 text-white border-2 border-white hover:bg-white hover:text-blue-600 transition-all font-semibold">
+                      <Button size="lg" className="bg-white/20 text-white border-2 border-white hover:bg-white/30 hover:border-white transition-all font-semibold backdrop-blur-sm">
                         View All Topics
                       </Button>
                     </Link>

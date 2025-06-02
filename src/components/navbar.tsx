@@ -19,7 +19,9 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
         {/* Logo and Progress Section */}
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center">
-            <span className="text-white text-2xl font-bold">Fin<span className="text-green-300">lingo</span></span>
+            <span className="text-white text-2xl font-bold">
+              <span className="text-green-300">Fin</span>lingo
+            </span>
           </Link>
           
           {/* Daily Progress */}
