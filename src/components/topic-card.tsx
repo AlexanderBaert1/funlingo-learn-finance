@@ -22,7 +22,7 @@ export function TopicCard({ topic }: TopicCardProps) {
       className={`
         relative flex flex-col items-center p-6 rounded-2xl 
         transition-transform transform hover:scale-105 
-        ${topic.locked ? 'bg-white/40 cursor-not-allowed opacity-70' : 'bg-white/90 backdrop-blur-sm shadow-md hover:shadow-lg hover:bg-white/95'}
+        ${topic.locked ? 'bg-gray-100 cursor-not-allowed opacity-70' : 'bg-white shadow-md hover:shadow-lg'}
       `}
     >
       {topic.locked && (
@@ -46,7 +46,7 @@ export function TopicCard({ topic }: TopicCardProps) {
       </div>
       
       <h3 className="text-lg font-bold mb-1">{topic.title}</h3>
-      <p className="text-sm text-gray-600 text-center mb-4">{topic.description}</p>
+      <p className="text-sm text-gray-500 text-center mb-4">{topic.description}</p>
       
       {topic.progress > 0 && !topic.locked && (
         <div className="w-full bg-gray-200 rounded-full h-1.5 mb-1">

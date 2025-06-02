@@ -13,13 +13,13 @@ const Index = () => {
   const [progress, setProgress] = useState(15);
   
   return (
-    <div className="min-h-screen bg-gradient-to-br from-green-400 via-blue-500 to-blue-600">
+    <div className="min-h-screen bg-gray-50">
       <Navbar streak={streak} gems={gems} progress={progress} />
       
       <main className="container mx-auto px-4 py-6">
         {/* Hero Section */}
         <section className="mb-10">
-          <Card className="overflow-hidden bg-white/10 backdrop-blur-sm border-white/20">
+          <Card className="overflow-hidden bg-gradient-to-r from-finlingo-primary to-finlingo-secondary">
             <CardContent className="p-6 sm:p-8">
               <div className="flex flex-col items-center">
                 <div className="text-white mb-6 text-center">
@@ -29,12 +29,12 @@ const Index = () => {
                   </p>
                   <div className="flex flex-wrap gap-4 justify-center animate-slide-up" style={{animationDelay: "0.2s"}}>
                     <Link to="/topic/finance-basics">
-                      <Button size="lg" className="bg-white text-green-600 hover:bg-gray-100 font-semibold">
+                      <Button size="lg" className="bg-white text-finlingo-primary hover:bg-gray-100">
                         Start Today's Lesson
                       </Button>
                     </Link>
                     <Link to="#topics">
-                      <Button size="lg" className="bg-white/20 text-white border-2 border-white hover:bg-white/30 hover:border-white transition-all font-semibold backdrop-blur-sm">
+                      <Button size="lg" className="bg-white/20 text-white border-2 border-white hover:bg-white hover:text-finlingo-primary transition-all">
                         View All Topics
                       </Button>
                     </Link>
@@ -48,10 +48,10 @@ const Index = () => {
         {/* Daily Streak */}
         <section className="mb-8">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-white">Your Progress</h2>
-            <Link to="/profile" className="text-white/90 text-sm font-semibold hover:text-white">View Details</Link>
+            <h2 className="text-xl font-bold">Your Progress</h2>
+            <Link to="/profile" className="text-finlingo-primary text-sm font-semibold">View Details</Link>
           </div>
-          <Card className="bg-white/95 backdrop-blur-sm">
+          <Card>
             <CardContent className="p-6">
               <div className="flex flex-col sm:flex-row gap-6 sm:items-center">
                 <div className="sm:w-1/3">
@@ -110,7 +110,7 @@ const Index = () => {
         {/* Topic Cards */}
         <section id="topics">
           <div className="flex items-center justify-between mb-4">
-            <h2 className="text-xl font-bold text-white">Finance Topics</h2>
+            <h2 className="text-xl font-bold">Finance Topics</h2>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">

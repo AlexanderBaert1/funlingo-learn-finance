@@ -14,20 +14,18 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white/10 backdrop-blur-md border-b border-white/20 py-2 px-4">
+    <nav className="bg-white shadow-md py-2 px-4">
       <div className="container mx-auto flex justify-between items-center">
         {/* Logo and Progress Section */}
         <div className="flex items-center gap-4">
           <Link to="/" className="flex items-center">
-            <span className="text-white text-2xl font-bold">
-              <span className="text-green-300">Fin</span>lingo
-            </span>
+            <span className="text-[#3D99EC] text-2xl font-bold">Fin<span className="text-[#4CA35A]">lingo</span></span>
           </Link>
           
           {/* Daily Progress */}
           <div className="hidden sm:flex items-center gap-2">
-            <Progress value={progress} className="w-32 h-2.5 bg-white/20" />
-            <span className="text-sm font-medium text-white">{progress}%</span>
+            <Progress value={progress} className="w-32 h-2.5 bg-gray-200" />
+            <span className="text-sm font-medium">{progress}%</span>
           </div>
         </div>
         
@@ -35,8 +33,8 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
         <div className="flex items-center gap-6">
           {/* Streak */}
           <div className="flex items-center">
-            <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="bg-[#3D99EC]/10 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#3D99EC" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M14.5 4.5 12 2 9.5 4.5"></path>
                 <path d="m18 6-2-2"></path>
                 <path d="m8 6-2 2"></path>
@@ -46,27 +44,27 @@ export function Navbar({ progress = 0, streak = 0, gems = 0 }: NavbarProps) {
                 <path d="M9 12h12"></path>
               </svg>
             </div>
-            <span className="ml-1 font-semibold text-sm text-white">{streak}</span>
+            <span className="ml-1 font-semibold text-sm">{streak}</span>
           </div>
           
           {/* Gems */}
           <div className="flex items-center">
-            <div className="bg-white/20 p-2 rounded-full backdrop-blur-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <div className="bg-[#4CA35A]/10 p-2 rounded-full">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4CA35A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M6 3h12l4 6-10 13L2 9Z"></path>
                 <path d="M12 22V9"></path>
                 <path d="m12 9 4-6"></path>
                 <path d="m12 9-4-6"></path>
               </svg>
             </div>
-            <span className="ml-1 font-semibold text-sm text-white">{gems}</span>
+            <span className="ml-1 font-semibold text-sm">{gems}</span>
           </div>
           
           {/* Profile / Login Button */}
           <Button
             variant="ghost"
             size="icon"
-            className="rounded-full text-white hover:bg-white/20"
+            className="rounded-full"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
