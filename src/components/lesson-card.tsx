@@ -1,4 +1,3 @@
-
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 
@@ -59,13 +58,23 @@ export function LessonCard({ lesson, topicColor }: LessonCardProps) {
       <p className="text-sm text-gray-600 mb-4">{lesson.description}</p>
       
       <div className="flex justify-end">
-        <Button
-          disabled={lesson.locked}
-          className={`text-white ${lesson.completed ? 'bg-gray-400 hover:bg-gray-500' : ''}`}
-          style={{backgroundColor: lesson.completed ? '' : topicColor}}
-        >
-          {lesson.completed ? 'Practice Again' : 'Start Lesson'}
-        </Button>
+        {lesson.locked ? (
+          <Button
+            disabled={true}
+            className="text-white bg-gray-400"
+          >
+            Locked
+          </Button>
+        ) : (
+          <Link to={`/lesson/${lesson.topicId}/${lesson.id}`}>
+            <Button
+              className={`text-white ${lesson.completed ? 'bg-gray-400 hover:bg-gray-500' : ''}`}
+              style={{backgroundColor: lesson.completed ? '' : topicColor}}
+            >
+              {lesson.completed ? 'Practice Again' : 'Start Lesson'}
+            </Button>
+          </Link>
+        )}
       </div>
     </div>
   );
