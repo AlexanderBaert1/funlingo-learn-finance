@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from "@/components/ui/button";
@@ -21,13 +20,13 @@ const Index = () => {
         <section className="mb-10">
           <Card className="overflow-hidden bg-gradient-to-r from-finlingo-primary to-finlingo-secondary">
             <CardContent className="p-6 sm:p-8">
-              <div className="flex flex-col md:flex-row items-center">
-                <div className="md:w-2/3 text-white mb-6 md:mb-0">
+              <div className="flex flex-col items-center">
+                <div className="text-white mb-6 text-center">
                   <h1 className="text-3xl sm:text-4xl font-bold mb-2 animate-slide-up">Welcome to Finlingo!</h1>
                   <p className="text-lg opacity-90 mb-6 animate-slide-up" style={{animationDelay: "0.1s"}}>
                     Learn personal finance through fun, bite-sized lessons.
                   </p>
-                  <div className="flex flex-wrap gap-4 animate-slide-up" style={{animationDelay: "0.2s"}}>
+                  <div className="flex flex-wrap gap-4 justify-center animate-slide-up" style={{animationDelay: "0.2s"}}>
                     <Link to="/topic/finance-basics">
                       <Button size="lg" className="bg-white text-finlingo-primary hover:bg-gray-100">
                         Start Today's Lesson
@@ -38,16 +37,6 @@ const Index = () => {
                         View All Topics
                       </Button>
                     </Link>
-                  </div>
-                </div>
-                <div className="md:w-1/3 flex justify-center">
-                  <div className="relative w-48 h-48 animate-bounce-slight">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" className="w-full h-full">
-                      <path fill="#FFFFFF" d="M45.7,-51.5C59.8,-40.9,72.3,-28.1,76.7,-12.5C81.1,3.1,77.4,21.5,68,36.3C58.6,51.1,43.4,62.2,26.9,67.5C10.3,72.8,-7.8,72.2,-25.4,67C-43,61.7,-60.1,51.9,-68.5,37C-76.8,22,-76.5,2,-70.3,-14.5C-64.1,-30.9,-51.9,-43.8,-38.3,-54.3C-24.8,-64.8,-9.9,-73,3.4,-77C16.7,-80.9,31.7,-62,45.7,-51.5Z" transform="translate(100 100)" />
-                    </svg>
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-5xl font-bold text-finlingo-primary">💰</div>
-                    </div>
                   </div>
                 </div>
               </div>
