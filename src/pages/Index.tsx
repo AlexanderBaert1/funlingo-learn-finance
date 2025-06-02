@@ -28,12 +28,14 @@ const Index = () => {
                     Learn personal finance through fun, bite-sized lessons.
                   </p>
                   <div className="flex flex-wrap gap-4 animate-slide-up" style={{animationDelay: "0.2s"}}>
-                    <Button size="lg" className="bg-white text-finlingo-primary hover:bg-gray-100">
-                      Start Today's Lesson
-                    </Button>
-                    <Link to="/skills">
+                    <Link to="/topic/finance-basics">
+                      <Button size="lg" className="bg-white text-finlingo-primary hover:bg-gray-100">
+                        Start Today's Lesson
+                      </Button>
+                    </Link>
+                    <Link to="#topics">
                       <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                        View All Skills
+                        View All Topics
                       </Button>
                     </Link>
                   </div>
@@ -44,7 +46,7 @@ const Index = () => {
                       <path fill="#FFFFFF" d="M45.7,-51.5C59.8,-40.9,72.3,-28.1,76.7,-12.5C81.1,3.1,77.4,21.5,68,36.3C58.6,51.1,43.4,62.2,26.9,67.5C10.3,72.8,-7.8,72.2,-25.4,67C-43,61.7,-60.1,51.9,-68.5,37C-76.8,22,-76.5,2,-70.3,-14.5C-64.1,-30.9,-51.9,-43.8,-38.3,-54.3C-24.8,-64.8,-9.9,-73,3.4,-77C16.7,-80.9,31.7,-62,45.7,-51.5Z" transform="translate(100 100)" />
                     </svg>
                     <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="text-5xl font-bold text-finlingo-primary">$</div>
+                      <div className="text-5xl font-bold text-finlingo-primary">💰</div>
                     </div>
                   </div>
                 </div>
@@ -116,10 +118,9 @@ const Index = () => {
         </section>
         
         {/* Topic Cards */}
-        <section>
+        <section id="topics">
           <div className="flex items-center justify-between mb-4">
             <h2 className="text-xl font-bold">Finance Topics</h2>
-            <Link to="/topics" className="text-finlingo-primary text-sm font-semibold">View All</Link>
           </div>
           
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
