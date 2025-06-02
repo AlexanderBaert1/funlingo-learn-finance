@@ -8,6 +8,9 @@ import Index from "./pages/Index";
 import TopicPage from "./pages/TopicPage";
 import LessonPage from "./pages/LessonPage";
 import Profile from "./pages/Profile";
+import NewsFeed from "./pages/NewsFeed";
+import Lessons from "./pages/Lessons";
+import Community from "./pages/Community";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -20,6 +23,9 @@ const App = () => (
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
+          <Route path="/news" element={<NewsFeed />} />
+          <Route path="/lessons" element={<Lessons />} />
+          <Route path="/community" element={<Community />} />
           <Route path="/topic/:topicId" element={<TopicPage />} />
           <Route path="/lesson/:topicId/:lessonId" element={<LessonPage />} />
           <Route path="/profile" element={<Profile />} />
