@@ -136,7 +136,7 @@ class Question(TimestampMixin):
     is_ai_generated: bool = False
     scenario_context: Optional[str] = None  # For scenario-based questions
     
-class Lesson(BaseModel, TimestampMixin):
+class Lesson(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     topic_id: str
     title: str
