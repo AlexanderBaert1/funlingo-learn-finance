@@ -280,7 +280,7 @@ class UserProgress(TimestampMixin):
     mastery_level: float = 0.0
     last_accessed: datetime = Field(default_factory=datetime.utcnow)
 
-class UserActivity(BaseModel, TimestampMixin):
+class UserActivity(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     activity_type: str  # lesson_completed, achievement_earned, streak_extended, etc.
