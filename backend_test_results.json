@@ -1,80 +1,129 @@
 {
   "summary": {
     "total_tests": 10,
-    "passed": 0,
-    "failed": 10,
-    "success_rate": 0.0,
-    "timestamp": "2025-08-21T11:56:57.433112"
+    "passed": 4,
+    "failed": 6,
+    "success_rate": 40.0,
+    "timestamp": "2025-08-21T11:59:22.188772"
   },
   "detailed_results": [
     {
       "test": "Health Check",
-      "success": false,
-      "details": "HTTP 502",
-      "timestamp": "2025-08-21T11:56:57.392361",
-      "response_data": null
+      "success": true,
+      "details": "Backend is healthy",
+      "timestamp": "2025-08-21T11:58:59.926612",
+      "response_data": {
+        "status": "healthy",
+        "timestamp": "2025-08-21T11:58:59.922703"
+      }
     },
     {
       "test": "User Creation",
-      "success": false,
-      "details": "HTTP 502: ",
-      "timestamp": "2025-08-21T11:56:57.399639",
-      "response_data": null
+      "success": true,
+      "details": "Created user with ID: 563f8795-c5eb-4e3f-b2a9-7118c155f3fe",
+      "timestamp": "2025-08-21T11:58:59.976996",
+      "response_data": {
+        "created_at": "2025-08-21T11:58:59.942407",
+        "updated_at": "2025-08-21T11:58:59.942409",
+        "id": "563f8795-c5eb-4e3f-b2a9-7118c155f3fe",
+        "username": "testuser_46efb125",
+        "email": "test_a78e1f64@finlingo.com",
+        "display_name": "Test User",
+        "avatar_url": null,
+        "current_streak": 0,
+        "longest_streak": 0,
+        "total_xp": 0,
+        "total_gems": 0,
+        "hearts": 3,
+        "max_hearts": 5,
+        "last_heart_refill": "2025-08-21T11:58:59.942439",
+        "level": 1,
+        "topics_completed": [],
+        "lessons_completed": [],
+        "last_activity": "2025-08-21T11:58:59.942454",
+        "preferences": {},
+        "achievements": [],
+        "is_premium": false
+      }
     },
     {
       "test": "User Profile Retrieval",
-      "success": false,
-      "details": "No test user ID available",
-      "timestamp": "2025-08-21T11:56:57.399700",
-      "response_data": null
+      "success": true,
+      "details": "Successfully retrieved user profile",
+      "timestamp": "2025-08-21T11:59:00.029441",
+      "response_data": {
+        "created_at": "2025-08-21T11:58:59.942000",
+        "updated_at": "2025-08-21T11:58:59.942000",
+        "id": "563f8795-c5eb-4e3f-b2a9-7118c155f3fe",
+        "username": "testuser_46efb125",
+        "email": "test_a78e1f64@finlingo.com",
+        "display_name": "Test User",
+        "avatar_url": null,
+        "current_streak": 0,
+        "longest_streak": 0,
+        "total_xp": 0,
+        "total_gems": 0,
+        "hearts": 3,
+        "max_hearts": 5,
+        "last_heart_refill": "2025-08-21T11:58:59.942000",
+        "level": 1,
+        "topics_completed": [],
+        "lessons_completed": [],
+        "last_activity": "2025-08-21T11:58:59.942000",
+        "preferences": {},
+        "achievements": [],
+        "is_premium": false
+      }
     },
     {
       "test": "AI Question Generation",
       "success": false,
-      "details": "HTTP 502: ",
-      "timestamp": "2025-08-21T11:56:57.408976",
+      "details": "Invalid response format: {'questions': []}",
+      "timestamp": "2025-08-21T11:59:22.100734",
       "response_data": null
     },
     {
       "test": "Achievements Endpoint",
       "success": false,
-      "details": "HTTP 502: ",
-      "timestamp": "2025-08-21T11:56:57.415561",
+      "details": "HTTP 500: Internal Server Error",
+      "timestamp": "2025-08-21T11:59:22.113869",
       "response_data": null
     },
     {
       "test": "Global Leaderboard",
-      "success": false,
-      "details": "HTTP 502: ",
-      "timestamp": "2025-08-21T11:56:57.425231",
-      "response_data": null
+      "success": true,
+      "details": "Retrieved leaderboard with 1 entries",
+      "timestamp": "2025-08-21T11:59:22.125746",
+      "response_data": {
+        "count": 1
+      }
     },
     {
       "test": "Discussion Creation",
       "success": false,
-      "details": "No test user ID available",
-      "timestamp": "2025-08-21T11:56:57.425289",
+      "details": "HTTP 500: Internal Server Error",
+      "timestamp": "2025-08-21T11:59:22.148746",
       "response_data": null
     },
     {
       "test": "Discussions Retrieval",
       "success": false,
-      "details": "HTTP 502: ",
-      "timestamp": "2025-08-21T11:56:57.432225",
+      "details": "HTTP 500: Internal Server Error",
+      "timestamp": "2025-08-21T11:59:22.163659",
       "response_data": null
     },
     {
       "test": "Lesson Completion Flow",
       "success": false,
-      "details": "No test user ID available",
-      "timestamp": "2025-08-21T11:56:57.432282",
+      "details": "HTTP 404: {\"detail\":\"Lesson not found\"}",
+      "timestamp": "2025-08-21T11:59:22.174734",
       "response_data": null
     },
     {
       "test": "User Progress Analytics",
       "success": false,
-      "details": "No test user ID available",
-      "timestamp": "2025-08-21T11:56:57.432291",
+      "details": "HTTP 500: Internal Server Error",
+      "timestamp": "2025-08-21T11:59:22.187972",
       "response_data": null
     }
   ]
