@@ -243,7 +243,7 @@ class Challenge(TimestampMixin):
     is_active: bool = True
     difficulty: int = 1
 
-class ChallengeParticipant(BaseModel, TimestampMixin):
+class ChallengeParticipant(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     challenge_id: str
     user_id: str
