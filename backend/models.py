@@ -267,7 +267,7 @@ class StudyGroup(TimestampMixin):
     activity_feed: List[Dict[str, Any]] = []
 
 # Progress and Analytics Models
-class UserProgress(BaseModel, TimestampMixin):
+class UserProgress(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     lesson_id: str
