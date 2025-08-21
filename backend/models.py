@@ -227,7 +227,7 @@ class DiscussionReply(TimestampMixin):
     downvotes: int = 0
     is_solution: bool = False
 
-class Challenge(BaseModel, TimestampMixin):
+class Challenge(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     title: str
     description: str
