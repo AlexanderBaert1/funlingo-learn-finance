@@ -188,7 +188,7 @@ class AIRecommendation(TimestampMixin):
     is_viewed: bool = False
     is_accepted: bool = False
 
-class AIGeneratedQuestion(BaseModel, TimestampMixin):
+class AIGeneratedQuestion(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     topic_id: str
