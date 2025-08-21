@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "total_tests": 10,
+    "passed": 0,
+    "failed": 10,
+    "success_rate": 0.0,
+    "timestamp": "2025-08-21T11:56:57.433112"
+  },
+  "detailed_results": [
+    {
+      "test": "Health Check",
+      "success": false,
+      "details": "HTTP 502",
+      "timestamp": "2025-08-21T11:56:57.392361",
+      "response_data": null
+    },
+    {
+      "test": "User Creation",
+      "success": false,
+      "details": "HTTP 502: ",
+      "timestamp": "2025-08-21T11:56:57.399639",
+      "response_data": null
+    },
+    {
+      "test": "User Profile Retrieval",
+      "success": false,
+      "details": "No test user ID available",
+      "timestamp": "2025-08-21T11:56:57.399700",
+      "response_data": null
+    },
+    {
+      "test": "AI Question Generation",
+      "success": false,
+      "details": "HTTP 502: ",
+      "timestamp": "2025-08-21T11:56:57.408976",
+      "response_data": null
+    },
+    {
+      "test": "Achievements Endpoint",
+      "success": false,
+      "details": "HTTP 502: ",
+      "timestamp": "2025-08-21T11:56:57.415561",
+      "response_data": null
+    },
+    {
+      "test": "Global Leaderboard",
+      "success": false,
+      "details": "HTTP 502: ",
+      "timestamp": "2025-08-21T11:56:57.425231",
+      "response_data": null
+    },
+    {
+      "test": "Discussion Creation",
+      "success": false,
+      "details": "No test user ID available",
+      "timestamp": "2025-08-21T11:56:57.425289",
+      "response_data": null
+    },
+    {
+      "test": "Discussions Retrieval",
+      "success": false,
+      "details": "HTTP 502: ",
+      "timestamp": "2025-08-21T11:56:57.432225",
+      "response_data": null
+    },
+    {
+      "test": "Lesson Completion Flow",
+      "success": false,
+      "details": "No test user ID available",
+      "timestamp": "2025-08-21T11:56:57.432282",
+      "response_data": null
+    },
+    {
+      "test": "User Progress Analytics",
+      "success": false,
+      "details": "No test user ID available",
+      "timestamp": "2025-08-21T11:56:57.432291",
+      "response_data": null
+    }
+  ]
+}
