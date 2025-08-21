@@ -254,7 +254,7 @@ class ChallengeParticipant(TimestampMixin):
     completed_at: Optional[datetime] = None
     is_winner: bool = False
 
-class StudyGroup(BaseModel, TimestampMixin):
+class StudyGroup(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     name: str
     description: str
