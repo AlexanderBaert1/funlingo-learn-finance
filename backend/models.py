@@ -177,7 +177,7 @@ class LearningPath(TimestampMixin):
     is_active: bool = True
     progress: float = 0.0
 
-class AIRecommendation(BaseModel, TimestampMixin):
+class AIRecommendation(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     type: str  # lesson, topic, practice, review
