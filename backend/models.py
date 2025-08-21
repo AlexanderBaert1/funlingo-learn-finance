@@ -200,7 +200,7 @@ class AIGeneratedQuestion(TimestampMixin):
     feedback_score: Optional[float] = None
 
 # Community Features Models
-class Discussion(BaseModel, TimestampMixin):
+class Discussion(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     title: str
     content: str
