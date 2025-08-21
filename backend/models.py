@@ -45,7 +45,7 @@ class QuestionType(str, Enum):
     CALCULATION = "calculation"
 
 # User Profile Models
-class UserProfile(BaseModel, TimestampMixin):
+class UserProfile(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     username: str
     email: str
