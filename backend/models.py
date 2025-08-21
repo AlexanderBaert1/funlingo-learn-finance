@@ -90,7 +90,7 @@ class Achievement(TimestampMixin):
     is_active: bool = True
     rarity: str = "common"  # common, rare, epic, legendary
 
-class UserAchievement(BaseModel, TimestampMixin):
+class UserAchievement(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     achievement_id: str
