@@ -110,7 +110,7 @@ class LeaderboardEntry(BaseModel):
     period_end: datetime
     topic_id: Optional[str] = None  # For topic-specific leaderboards
 
-class Streak(BaseModel, TimestampMixin):
+class Streak(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     current_streak: int = 0
