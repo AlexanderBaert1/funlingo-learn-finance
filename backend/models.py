@@ -166,7 +166,7 @@ class Topic(TimestampMixin):
     category: str = "finance"
 
 # AI-Powered Features Models
-class LearningPath(BaseModel, TimestampMixin):
+class LearningPath(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     user_id: str
     name: str
