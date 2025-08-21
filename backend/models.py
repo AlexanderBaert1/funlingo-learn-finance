@@ -77,7 +77,7 @@ class UserProfileUpdate(BaseModel):
     preferences: Optional[Dict[str, Any]] = None
 
 # Gamification Models
-class Achievement(BaseModel, TimestampMixin):
+class Achievement(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     name: str
     description: str
