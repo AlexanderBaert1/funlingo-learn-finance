@@ -216,7 +216,7 @@ class Discussion(TimestampMixin):
     is_pinned: bool = False
     is_resolved: bool = False
 
-class DiscussionReply(BaseModel, TimestampMixin):
+class DiscussionReply(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     discussion_id: str
     content: str
