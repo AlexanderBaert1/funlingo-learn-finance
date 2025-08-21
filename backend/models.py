@@ -151,7 +151,7 @@ class Lesson(TimestampMixin):
     lesson_type: str = "standard"  # standard, practice, review, challenge
     objectives: List[str] = []
 
-class Topic(BaseModel, TimestampMixin):
+class Topic(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     title: str
     description: str
