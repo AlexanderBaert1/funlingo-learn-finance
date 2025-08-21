@@ -120,7 +120,7 @@ class Streak(TimestampMixin):
     total_freeze_used: int = 0
 
 # Enhanced Educational Content Models
-class Question(BaseModel, TimestampMixin):
+class Question(TimestampMixin):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
     lesson_id: str
     topic_id: str
